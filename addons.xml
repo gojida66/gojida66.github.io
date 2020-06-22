@@ -32,15 +32,15 @@ Changed: Vporn to PornOne
     </extension>
 </addon>
 
-<addon id="repository.gojida" name="[COLOR pink]gojida Repository[/COLOR]" version="1.0.2" provider-name="gojida">
+<addon id="repository.gojida66" name="[COLOR pink]gojida66 Repository[/COLOR]" version="1.0.2" provider-name="gojida66">
     <extension point="xbmc.addon.repository" name="[COLOR pink]gojida Repository[/COLOR]">
     <dir>
         <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
         <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
 </dir>
-        <info compressed="false">https://raw.githubusercontent.com/gojida66/gojida66.github.io/master/repository.gojida/addon.xml</info>
-        <checksum>https://raw.githubusercontent.com/gojida66/gojida66.github.io/master/repository.gojida/addons.xml.md5</checksum>
+        <info compressed="false">https://raw.githubusercontent.com/gojida66/gojida66.github.io/master/addon.xml</info>
+        <checksum>https://raw.githubusercontent.com/gojida66/gojida66.github.io/master/addons.xml.md5</checksum>
         <datadir zip="true">https://raw.githubusercontent.com/gojida66/gojida66.github.io/master/</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
