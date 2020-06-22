@@ -3,7 +3,7 @@
 <addon id="plugin.video.ucw"
        name="Ultimate Whitecrea"
        version="1.2.20"
-       provider-name="Whitecream, holisticdioxide">
+       provider-name="Whitecrea, holisticdioxide">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.resolveurl" version="5.0.00"/>
@@ -41,7 +41,7 @@ Changed: Vporn to PornOne
 </dir>
         <info compressed="false">https://raw.githubusercontent.com/gojida66/gojida66.github.io/master/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/gojida66/gojida66.github.io/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/gojida66/repository.gojida66/master/</datadir>
+        <datadir zip="true">https://raw.githubusercontent.com/gojida66/gojida66.github.io/master/</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Unofficial Addons for Kodi</summary>
