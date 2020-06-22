@@ -28,10 +28,10 @@ import urllib2,urllib
 def Main():
     utils.addDir('[COLOR hotpink]Categories[/COLOR]', 'https://mangoporn.net/', 803, '', '')
     utils.addDir('[COLOR hotpink]Years[/COLOR]', 'https://mangoporn.net/', 804, '', '')
-    utils.addDir('[COLOR hotpink]Studios[/COLOR]', 'https://mangoporn.net/', 805, '', '')
-    utils.addDir('[COLOR hotpink]Pornstars[/COLOR]', 'https://mangoporn.net/', 806, '', '')    
-    utils.addDir('[COLOR hotpink]Search[/COLOR]', 'https://mangoporn.net/?s=', 807, '', '') 
-    List('https://mangoporn.net/genres/featured-movies/')
+    utils.addDir('[COLOR hotpink]Studios[/COLOR]', 'https://mangoporn.co/', 805, '', '')
+    utils.addDir('[COLOR red]INDICE[/COLOR]', 'https://mangoporn.net/', 806, '', '')    
+    utils.addDir('[COLOR hotpink]Search[/COLOR]', 'https://mangoporn.co/?s=', 807, '', '') 
+    List('https://mangoporn.co/studios/vixen/')
 
 
 @utils.url_dispatcher.register('801', ['url'])
@@ -116,16 +116,16 @@ def Years(url):
 @utils.url_dispatcher.register('805', ['url'])
 def Studio(url):
     cathtml = utils.getHtml(url, '')
-    match = re.compile('a href="(https://mangoporn.net/adult/studios/[^"]+)">([^<]+)<', re.DOTALL | re.IGNORECASE).findall(cathtml)
+    match = re.compile('a href="(https://mangoporn.co/studios/[^"]+)">([^<]+)<', re.DOTALL | re.IGNORECASE).findall(cathtml)
     for catpage, name in match:
         name = utils.cleantext(name)
         utils.addDir(name, catpage, 801, '')    
     xbmcplugin.endOfDirectory(utils.addon_handle)    
     
 @utils.url_dispatcher.register('806', ['url'])
-def Pornstars(url):
+def indice(url):
     cathtml = utils.getHtml(url, '')
-    match = re.compile('a href="(https://mangoporn.net/adult/pornstar/[^"]+)">([^<]+)<', re.DOTALL | re.IGNORECASE).findall(cathtml)
+    match = re.compile('a href="(https://mangoporn.net/adult/[^"]+)">([^<]+)<', re.DOTALL | re.IGNORECASE).findall(cathtml)
     for catpage, name in match:
         name = utils.cleantext(name)
         utils.addDir(name, catpage, 801, '')    
