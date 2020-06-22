@@ -6,9 +6,9 @@
         <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
         <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
 </dir>
-        <info compressed="false">https://raw.githubusercontent.com/gojida66/gojida66.github.io/master/addon.xml</info>
+        <info compressed="false">https://raw.githubusercontent.com/gojida66/gojida66.github.io/master/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/gojida66/gojida66.github.io/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/gojida66/gojida66.github.io/master/</datadir>
+        <datadir zip="true">https://raw.githubusercontent.com/gojida66/gojida66.github.io/master</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Unofficial Addons for Kodi</summary>
@@ -16,6 +16,4 @@
         <platform>all</platform>
     </extension>
 </addon>
-
-
 
